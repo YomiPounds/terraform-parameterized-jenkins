@@ -20,7 +20,7 @@ pipeline{
         }
         stage('terraf apply'){
             steps{
-                sh "terraform apply -var 'region=${params.region}' --auto-approve -auto-approve"
+                sh "terraform apply -var 'region=${params.region}' --auto-approve"
             }
         }
     }
