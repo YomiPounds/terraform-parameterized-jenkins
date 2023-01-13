@@ -15,12 +15,12 @@ pipeline{
         }
         stage('terraform plan'){
             steps{
-                sh "terraform plan -var 'region=${params.region}' -auto-approve"
+                sh "terraform plan -var 'region=${params.region}' --auto-approve"
             }
         }
         stage('terraf apply'){
             steps{
-                sh "terraform apply -var 'region=${params.region}' -auto-approve -auto-approve"
+                sh "terraform apply -var 'region=${params.region}' --auto-approve -auto-approve"
             }
         }
     }
