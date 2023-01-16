@@ -12,11 +12,11 @@ provider "aws" {
   region = var.region
 }
 
-resource "aws_instance" "webb" {
-  ami           = "ami-0ff39345bd62c82a5"
+resource "aws_instance" "myec2" {
+  ami           = "ami-071c33e7823c066b5"
   instance_type = "t3.micro"
 
   tags = {
-    Name = "Poundoh"
+    Name = "Poundohss"
   }
 }
